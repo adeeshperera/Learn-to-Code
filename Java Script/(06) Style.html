@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Test Website</title>
+    </head>
+    <body>
+        <p id="test01">Test</p>
+        <button id="button1">Color</button>
+        <button id="button2">Font Size</button>
+        <button id="button3">Disappear</button>
+
+        <script type="text/javascript">
+            document.getElementById("button1").onclick= function(){
+                document.getElementById("test01").style.color= "red";
+            }
+            document.getElementById("button2").onclick= function(){
+                document.getElementById("test01").style.fontSize= "50px";
+            }
+            document.getElementById("button3").onclick= function(){
+                document.getElementById("test01").style.display= "none";
+            }
+
+        </script>
+
+    </body>
+</html>
