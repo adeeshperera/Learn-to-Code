@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Test Website</title>
+    </head>
+    <body>
+        <p id="test01">Test</p>
+        <button id="button1">Test Button</button>
+
+        <p id="test02"></p>
+        <button id="button2">Test Input Button</button>
+
+        <script type="text/javascript">
+            document.getElementById("button1").onclick= function(){
+                document.getElementById("test01").innerHTML= document.getElementById("test01").innerHTML + " text";
+            }
+            document.getElementById("button2").onclick= function(){
+                document.getElementById("test02").innerHTML= "Test Input";
+            }
+
+        </script>
+
+    </body>
+</html>
