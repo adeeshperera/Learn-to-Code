@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Test Website</title>
+    </head>
+    <body>
+        <input type="text" id="test02">
+        <button id="test03">Test</button>
+
+        <p id="test05">Test text 02</p>
+
+        <script type="text/javascript">
+            var x = 10;     //Number
+                x = 25;
+            var test01 = "Test text 01";    //String
+            alert (x);
+            alert (test01);
+
+            document.getElementById("test03").onclick = function(){
+                var test04 = ""
+                var test06 = "Hello "
+                test04 = document.getElementById("test02").value;
+                alert (test04);
+                document.getElementById("test05").innerHTML = test06 + test04;
+            }
+        </script>
+    </body>
+</html>
