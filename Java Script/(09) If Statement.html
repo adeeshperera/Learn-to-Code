@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Test Website</title>
+    </head>
+    <body>
+        <p><input type="text" id="test01"></p>
+        <p><button id="test02">Test</button></p>
+
+        <script type="text/javascript">
+            var x=2;
+            if (x==1){
+                alert("True");
+            }
+            else{
+                alert("False");
+            }
+
+            document.getElementById("test02").onclick = function(){
+                var testinput = document.getElementById("test01").value;        //User input
+                var test01 = "inputcheck";      //True input
+                if(test01 == testinput){
+                    alert("True")
+                }
+                else{
+                    alert("False")
+                }
+            }
+        </script>
+
+    </body>
+</html>
