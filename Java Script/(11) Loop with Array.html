@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Test Website</title>
+    </head>
+    <body>
+        <div id="test02"></div>
+
+        <script type="text/javascript">
+            var test03 = "";
+
+            var test01 = ["Test text 01" , "Test text 02" , "Test text 03" , "Test text 04"];
+            for (var i = 0 ; i < test01.length ; i++){
+                alert(test01[i]);
+                
+                test03 = test03 + "<p>" + test01[i] + "</p>"
+            }
+            document.getElementById("test02").innerHTML = test03;
+        </script>
+
+    </body>
+</html>
