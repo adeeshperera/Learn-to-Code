@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defer Example</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+    
+    <!-- Include the script with defer attribute -->
+    <script defer>
+        // This code will be executed after the HTML document has been fully parsed.
+
+        // Define a function to be called when the document is fully loaded
+        function init() {
+            // Access and manipulate DOM elements here
+            var heading = document.querySelector('h1');
+            heading.style.color = 'blue';
+        }
+
+        // Add an event listener for the DOMContentLoaded event
+        // This event fires when the initial HTML document has been completely loaded and parsed
+        // The init function will be executed when this event occurs
+        document.addEventListener('DOMContentLoaded', init);
+
+        // Other script code can be placed here
+        // This code will still execute after the HTML document has been parsed,
+        // but before the DOMContentLoaded event fires.
+    </script>
+</body>
+</html>
