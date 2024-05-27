@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Script Tag Example</title>
+</head>
+<body>
+    <!-- Example script tag with async attribute -->
+    <script async src="script.js"></script>
+
+    <script>
+        // JavaScript code within the HTML file
+        // This code will run immediately, regardless of whether the 'script.js' file has loaded or not
+        console.log("This script runs immediately");
+
+        // You can include other synchronous scripts here, which will execute in order
+
+        // Now, let's define a function that will be called after the 'script.js' file is loaded
+        function afterScriptLoaded() {
+            console.log("Script.js has loaded");
+        }
+
+        // Since 'script.js' is loaded asynchronously, we cannot guarantee its availability immediately after this line
+        // Any code that depends on 'script.js' should be placed inside the function passed to the 'onload' event of the script element
+
+        // This function will be called when 'script.js' has loaded
+        // The script tag's 'onload' event is triggered when the script has successfully loaded and executed
+        document.querySelector("script[src='script.js']").onload = function() {
+            afterScriptLoaded();
+        };
+    </script>
+</body>
+</html>
+
