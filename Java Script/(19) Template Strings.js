@@ -1,21 +1,24 @@
-// Define variables
-const name = 'John';
+const name = "Alice";
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Output: Hello, Alice!
+
+//String Interpolation
 const age = 30;
-const city = 'New York';
+console.log(`I am ${age} years old.`); // Output: I am 30 years old.
 
-// Using template strings to create a string with dynamic values
-const greeting = `Hello, my name is ${name}, I am ${age} years old, and I live in ${city}.`;
-
-// Output the result
-console.log(greeting);
-
-// Template strings can also contain expressions and multiline strings
-const multilineString = `
-  This is a multiline string.
-  It can contain multiple lines.
-  Expressions like ${2 + 2} will be evaluated.
+//Multiline Strings
+const multiline = `
+This is a multiline
+string using template literals.
 `;
+console.log(multiline);
+/*
+Output:
+This is a multiline
+string using template literals.
+*/
 
-// Output the result
-console.log(multilineString);
-
+//Expression Evaluation
+const num1 = 5;
+const num2 = 10;
+console.log(`The sum of ${num1} and ${num2} is ${num1 + num2}.`); // Output: The sum of 5 and 10 is 15.
