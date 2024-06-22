@@ -1,39 +1,35 @@
 // Arrow Function
-const arrowFunction = (a, b) => {
-  return a + b;
+// Traditional function expression
+const traditionalFunc = function (x, y) {
+	return x + y;
 };
 
+// Arrow function
+const arrowFunc = (x, y) => x + y;
+
 // Anonymous Function
-const anonymousFunction = function(a, b) {
-  return a + b;
+var add = function (a, b) {
+	return a + b;
 };
 
 // Self-Invoked Anonymous Function
-(function() {
-  console.log("Self-invoked function");
+(function () {
+	console.log("Self-invoked function");
 })();
 
 // Arrow Function with THIS Keyword
-const obj = {
-  name: "John",
-  greet: function() {
-    // Here, if we use a regular function, `this` would refer to the context of the caller,
-    // but with an arrow function, `this` retains the context of the surrounding scope, which is `obj` in this case.
-    setTimeout(() => {
-      console.log("Hello, " + this.name);
-    }, 1000);
-  }
-};
+function Counter() {
+	this.count = 0;
 
-obj.greet();
+	setInterval(() => {
+		this.count++;
+		console.log(this.count);
+	}, 1000);
+}
+
+const counter = new Counter();
 
 // Arrow Function with Anonymous Function
-const arrowWithAnonymous = (param) => {
-  const anonymous = function(num) {
-    return num * 2;
-  };
-  return anonymous(param);
+const greet = (name) => {
+	console.log(`Hello, ${name}!`);
 };
-
-console.log(arrowWithAnonymous(3));
-obj.arrowWithThis(); // Output: 3
