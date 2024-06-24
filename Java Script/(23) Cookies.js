@@ -1,63 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cookie Example</title>
-<script>
-// Function to create a cookie
-function createCookie(name, value, days) {
-    var expires;
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    } else {
-        expires = "";
-    }
-    document.cookie = name + "=" + value + expires + "; path=/";
-}
+// Creating (Setting) Cookies
+document.cookie = "name=value; expires=date; path=path; domain=domain; secure";
 
 // Function to read a cookie
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var cookies = document.cookie.split(';');
-    for(var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        while (cookie.charAt(0) == ' ') {
-            cookie = cookie.substring(1, cookie.length);
-        }
-        if (cookie.indexOf(nameEQ) == 0) {
-            return cookie.substring(nameEQ.length, cookie.length);
-        }
-    }
-    return null;
+function getCookie(name) {
+	const cookieString = document.cookie;
+	const cookies = cookieString.split("; ");
+
+	for (let cookie of cookies) {
+		const [cookieName, cookieValue] = cookie.split("=");
+		if (cookieName === name) {
+			return cookieValue;
+		}
+	}
+	return null;
 }
+
+const getUsername = getCookie("username");
+console.log(getUsername); // Outputs: John Doe
 
 // Function to delete a cookie
-function eraseCookie(name) {
-    createCookie(name, "", -1);
+function deleteCookie(name) {
+	document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
 }
 
-// Example usage
-document.addEventListener("DOMContentLoaded", function() {
-    // Creating a cookie named "username" with value "John" that expires in 1 day
-    createCookie("username", "John", 1);
-    
-    // Reading the value of the "username" cookie
-    var username = readCookie("username");
-    console.log("Username:", username);
-    
-    // Deleting the "username" cookie
-    eraseCookie("username");
-    
-    // Attempting to read the value of the "username" cookie after deletion
-    var deletedUsername = readCookie("username");
-    console.log("Deleted Username:", deletedUsername);
-});
-</script>
-</head>
-<body>
-</body>
-</html>
+deleteCookie("username");
 
+// Example usage
+// Set a cookie with name "username" and value "John Doe" that expires in 7 days
+setCookie("username", "John Doe", 7);
+
+// Get the value of the "username" cookie
+const username = getCookie("username");
+console.log("Username:", username); // Outputs: "John Doe"
+
+// Delete the "username" cookie
+deleteCookie("username");
+
+// After deletion, attempt to get the "username" cookie again
+const deletedUsername = getCookie("username");
+console.log("Deleted Username:", deletedUsername); // Outputs: null
