@@ -8,7 +8,7 @@ const traditionalFunc = function (x, y) {
 const arrowFunc = (x, y) => x + y;
 
 // Anonymous Function
-var add = function (a, b) {
+var add = function (a, b) {		//var
 	return a + b;
 };
 
