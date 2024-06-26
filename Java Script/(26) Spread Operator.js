@@ -1,20 +1,28 @@
-// Joining arrays using spread operator
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
-const mergedArray = [...arr1, ...arr2]; // Spread operator used to concatenate arrays
-console.log("Merged Array:", mergedArray); // Output: Merged Array: [1, 2, 3, 4, 5, 6]
+//Arrays
+//Copying an Array
+const originalArray = [1, 2, 3];
+const copiedArray = [...originalArray];
 
-// Using array elements as function arguments
-function sum(a, b, c) {
-    return a + b + c;
-}
+//Concatenating Arrays
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const concatenatedArray = [...array1, ...array2];
+
+//Adding Elements to an Array
+const array = [1, 2, 3];
+const newArray = [...array, 4, 5, 6];
+
+//Passing Arrays as Arguments
 const numbers = [1, 2, 3];
-const result = sum(...numbers); // Spread operator used to pass array elements as arguments
-console.log("Sum:", result); // Output: Sum: 6
+const sum = (a, b, c) => a + b + c;
+const result = sum(...numbers);
 
-// Joining objects using spread operator
+//Objects
+//Copying Objects (Shallow Copy)
+const originalObject = { a: 1, b: 2 };
+const copiedObject = { ...originalObject };
+
+//Merging Objects
 const obj1 = { a: 1, b: 2 };
 const obj2 = { c: 3, d: 4 };
-const mergedObject = { ...obj1, ...obj2 }; // Spread operator used to merge objects
-console.log("Merged Object:", mergedObject); // Output: Merged Object: {a: 1, b: 2, c: 3, d: 4}
-
+const mergedObject = { ...obj1, ...obj2 };
