@@ -1,32 +1,18 @@
-// Define a function called myMap which takes two arguments:
-// 1. array: The array to iterate over
-// 2. callback: The function to apply to each element of the array
-function myMap(array, callback) {
-    // Create an empty array to store the results
-    var newArray = [];
-    
-    // Iterate over each element of the input array
-    for (var i = 0; i < array.length; i++) {
-        // Call the callback function with the current element of the array
-        // and store the result in the new array
-        newArray.push(callback(array[i], i, array));
-    }
-    
-    // Return the new array containing the results
-    return newArray;
-}
+// Example 1: Squaring each number in an array
+const numbers = [1, 2, 3, 4, 5];
+const squaredNumbers = numbers.map((num) => num * num);
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
 
-// Example usage of myMap:
-var numbers = [1, 2, 3, 4, 5];
+// Example 2: Converting Fahrenheit to Celsius
+const fahrenheitTemps = [32, 68, 104, 140];
+const celsiusTemps = fahrenheitTemps.map((f) => Math.round(((f - 32) * 5) / 9));
+console.log(celsiusTemps); // Output: [0, 20, 40, 60]
 
-// Define a function to be used as a callback
-function double(num) {
-    return num * 2;
-}
-
-// Use myMap to double each element in the numbers array
-var doubledNumbers = myMap(numbers, double);
-
-// Print the result
-console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
-
+//Extracting values from objects in an array
+const people = [
+	{ name: "Alice", age: 25 },
+	{ name: "Bob", age: 30 },
+	{ name: "Charlie", age: 35 },
+];
+const names = people.map((person) => person.name);
+console.log(names); // Output: ['Alice', 'Bob', 'Charlie']
