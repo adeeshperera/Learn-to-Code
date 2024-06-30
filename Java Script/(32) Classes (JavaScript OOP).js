@@ -1,93 +1,109 @@
-// Define a class named Person
+//constructor() Method
 class Person {
-  // Constructor method to initialize object properties
-  constructor(name, age) {
-    this.name = name; // Set the 'name' property of the object to the provided name
-    this.age = age;   // Set the 'age' property of the object to the provided age
-  }
-
-  // Method to greet the person
-  greet() {
-    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
-  }
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
 }
 
-// Creating a class instance (object) using the constructor
-const person1 = new Person('Alice', 30);
-
-// Accessing object properties
-console.log(person1.name); // Output: Alice
-console.log(person1.age);  // Output: 30
-
-// Calling the greet method of the object
-person1.greet(); // Output: Hello, my name is Alice and I'm 30 years old.
-
-// Parent class
-class Animal {
-    // Private property
-    #name;
-
-    constructor(name) {
-        this.#name = name;
-    }
-
-    // Getter for private property
-    getName() {
-        return this.#name;
-    }
-
-    // Private method
-    #makeSound(sound) {
-        console.log(`${this.#name} says ${sound}`);
-    }
-
-    // Method to be overridden by subclasses
-    makeSound() {
-        console.log(`${this.#name} makes a sound`);
-    }
-
-    // Static method
-    static getType() {
-        return "Animal";
-    }
+//this Keyword
+class Person {
+	constructor(name) {
+		this.name = name; // 'this' refers to the current instance of Person
+		//It helps to identify which is property of class and which is function parameter
+	}
 }
 
-// Child class inheriting from Animal
-class Dog extends Animal {
-    constructor(name) {
-        // Call super constructor to initialize parent's properties
-        super(name);
-    }
+//Creating a Class Instance
+const person1 = new Person("Alice");
 
-    // Override method
-    makeSound() {
-        // Call private method of parent class
-        this.#makeSound("Woof");
-    }
+//Create a Class Method
+class Person {
+	constructor(name) {
+		this.name = name;
+	}
 
-    // Static method overriding
-    static getType() {
-        return "Dog";
-    }
+	greet() {
+		console.log(`Hello, my name is ${this.name}.`);
+	}
 }
 
-// Static property
-Animal.origin = "Earth";
+person1.greet(); // Output: Hello, my name is Alice.  //Executes the greet() method on person1 instance
 
-// Creating objects
-const animal = new Animal("Generic Animal");
-const dog = new Dog("Buddy");
+//Inheritance (extend keyword)
+class Student extends Person {
+	constructor(name, grade) {
+		super(name); // Calls the superclass constructor with 'super'
+		this.grade = grade;
+	}
 
-// Accessing private property using getter
-console.log(animal.getName()); // Output: Generic Animal
+	study() {
+		console.log(`${this.name} is studying.`);
+	}
+}
 
-// Accessing private property indirectly
-dog.makeSound(); // Output: Buddy says Woof
+const student1 = new Student("Bob", 10);
+student1.greet(); // Inherited from Person class
+student1.study(); // Output: Bob is studying.
 
-// Accessing static property
-console.log(Animal.origin); // Output: Earth
+//Method overriding
+class Student extends Person {
+	greet() {
+		console.log(`Hi, I'm ${this.name}, a student.`);
+	}
+}
 
-// Accessing static method
-console.log(Animal.getType()); // Output: Animal
-console.log(Dog.getType());    // Output: Dog
+//Encapsulation
+//Private Properties (# key)
+class Example {
+	#privateField;
 
+	constructor() {
+		this.#privateField = 10;
+	}
+}
+//Private Methods (# key)
+class Example {
+	#privateMethod() {
+		console.log("This is a private method.");
+	}
+
+	publicMethod() {
+		this.#privateMethod(); // Private method called within the class
+	}
+}
+
+//Getters (get Keyword)
+class Circle {
+	constructor(radius) {
+		this.radius = radius;
+	}
+
+	get area() {
+		return Math.PI * this.radius * this.radius;
+	}
+}
+
+const circle = new Circle(5);
+console.log(circle.area); // Output: 78.53981633974483
+
+//Static Properties (static keyword)
+class Point {
+	static origin = new Point(0, 0);
+
+	constructor(x, y) {
+		this.x = x;
+		this.y = y;
+	}
+}
+
+console.log(Point.origin); // Output: Point { x: 0, y: 0 }
+
+//Static Methods
+class MathUtils {
+	static add(x, y) {
+		return x + y;
+	}
+}
+
+console.log(MathUtils.add(5, 3)); // Output: 8
