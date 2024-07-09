@@ -1,0 +1,42 @@
+// Define a function to parse a JSON string into a JavaScript object
+function customParse(jsonString) {
+    // Use try-catch to handle parsing errors
+    try {
+        // Use the JSON object's parse method to convert the string into a JavaScript object
+        const parsedObject = JSON.parse(jsonString);
+        // Return the parsed object
+        return parsedObject;
+    } catch (error) {
+        // If there's an error during parsing, log the error and return null
+        console.error('Error parsing JSON:', error.message);
+        return null;
+    }
+}
+
+// Define a function to convert a JavaScript object into a JSON string
+function customStringify(jsonObject) {
+    // Use try-catch to handle conversion errors
+    try {
+        // Use the JSON object's stringify method to convert the object into a JSON string
+        const jsonString = JSON.stringify(jsonObject);
+        // Return the JSON string
+        return jsonString;
+    } catch (error) {
+        // If there's an error during conversion, log the error and return null
+        console.error('Error converting to JSON:', error.message);
+        return null;
+    }
+}
+
+// Example usage:
+
+const jsonString = '{"name": "John", "age": 30}';
+// Parse the JSON string into a JavaScript object
+const parsedObject = customParse(jsonString);
+console.log(parsedObject);
+
+const jsonObject = { name: 'Jane', age: 25 };
+// Convert the JavaScript object into a JSON string
+const jsonString2 = customStringify(jsonObject);
+console.log(jsonString2);
+
