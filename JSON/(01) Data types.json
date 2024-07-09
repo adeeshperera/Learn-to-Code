@@ -1,0 +1,45 @@
+{
+  // Object containing information about a person
+  "person": {
+    // String representing the person's name
+    "name": "John Doe",
+    // Integer representing the person's age
+    "age": 30,
+    // Boolean representing if the person is married or not
+    "married": false,
+    // Array containing the person's hobbies
+    "hobbies": ["reading", "hiking", "cooking"],
+    // Object representing the person's address
+    "address": {
+      // String representing the street name
+      "street": "123 Main Street",
+      // String representing the city name
+      "city": "Anytown",
+      // String representing the state name
+      "state": "CA",
+      // Integer representing the postal code
+      "postal_code": 12345
+    },
+    // Null value representing the person's job (currently unemployed)
+    "job": null
+  },
+  // Array of objects containing information about books
+  "books": [
+    {
+      // String representing the book title
+      "title": "1984",
+      // String representing the author's name
+      "author": "George Orwell",
+      // Integer representing the publication year
+      "year": 1949,
+      // Boolean representing if the book is fiction or not
+      "fiction": true
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "fiction": true
+    }
+  ]
+}
