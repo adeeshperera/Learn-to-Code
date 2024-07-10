@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update HTML with JSON and AJAX</title>
+</head>
+<body>
+    <h1 id="title">Old Title</h1>
+    <p id="content">Old Content</p>
+
+    <script>
+        // Function to make AJAX request and update HTML content
+        function updateHTML() {
+            // Create a new XMLHttpRequest object
+            var xhttp = new XMLHttpRequest();
+
+            // Define the URL of the JSON file
+            var url = "data.json";
+
+            // Define a callback function to handle the response
+            xhttp.onreadystatechange = function() {
+                // Check if the request is complete and was successful
+                if (this.readyState == 4 && this.status == 200) {
+                    // Parse JSON response
+                    var data = JSON.parse(this.responseText);
+
+                    // Update HTML elements with new data
+                    document.getElementById("title").innerText = data.title;
+                    document.getElementById("content").innerText = data.content;
+                }
+            };
+
+            // Open a GET request to the JSON file
+            xhttp.open("GET", url, true);
+
+            // Send the request
+            xhttp.send();
+        }
+
+        // Call the updateHTML function when the page loads
+        window.onload = function() {
+            updateHTML();
+        };
+    </script>
+</body>
+</html>
+
