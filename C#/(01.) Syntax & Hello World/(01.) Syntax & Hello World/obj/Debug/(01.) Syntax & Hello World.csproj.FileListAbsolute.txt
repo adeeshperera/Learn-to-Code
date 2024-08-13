@@ -1,0 +1,8 @@
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\bin\Debug\(01.) Syntax & Hello World.exe.config
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\bin\Debug\(01.) Syntax & Hello World.exe
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\bin\Debug\(01.) Syntax & Hello World.pdb
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\obj\Debug\(01.) Syntax & Hello World.csproj.AssemblyReference.cache
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\obj\Debug\(01.) Syntax & Hello World.csproj.SuggestedBindingRedirects.cache
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\obj\Debug\(01.) Syntax & Hello World.csproj.CoreCompileInputs.cache
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\obj\Debug\(01.) Syntax & Hello World.exe
+E:\C#\(01.) Syntax & Hello World\(01.) Syntax & Hello World\obj\Debug\(01.) Syntax & Hello World.pdb
