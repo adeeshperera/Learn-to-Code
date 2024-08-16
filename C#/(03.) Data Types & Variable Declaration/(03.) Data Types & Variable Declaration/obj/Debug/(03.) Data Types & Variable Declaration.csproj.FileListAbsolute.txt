@@ -1,0 +1,8 @@
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\bin\Debug\(03.) Data Types & Variable Declaration.exe.config
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\bin\Debug\(03.) Data Types & Variable Declaration.exe
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\bin\Debug\(03.) Data Types & Variable Declaration.pdb
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\obj\Debug\(03.) Data Types & Variable Declaration.csproj.AssemblyReference.cache
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\obj\Debug\(03.) Data Types & Variable Declaration.csproj.SuggestedBindingRedirects.cache
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\obj\Debug\(03.) Data Types & Variable Declaration.csproj.CoreCompileInputs.cache
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\obj\Debug\(03.) Data Types & Variable Declaration.exe
+E:\C#\(03.) Data Types & Variable Declaration\(03.) Data Types & Variable Declaration\obj\Debug\(03.) Data Types & Variable Declaration.pdb
