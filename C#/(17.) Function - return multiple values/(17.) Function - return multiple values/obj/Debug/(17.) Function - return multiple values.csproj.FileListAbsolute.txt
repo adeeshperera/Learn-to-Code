@@ -1,0 +1,8 @@
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\bin\Debug\(17.) Function - return multiple values.exe.config
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\bin\Debug\(17.) Function - return multiple values.exe
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\bin\Debug\(17.) Function - return multiple values.pdb
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\obj\Debug\(17.) Function - return multiple values.csproj.AssemblyReference.cache
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\obj\Debug\(17.) Function - return multiple values.csproj.SuggestedBindingRedirects.cache
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\obj\Debug\(17.) Function - return multiple values.csproj.CoreCompileInputs.cache
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\obj\Debug\(17.) Function - return multiple values.exe
+E:\C#\(17.) Function - return multiple values\(17.) Function - return multiple values\obj\Debug\(17.) Function - return multiple values.pdb
