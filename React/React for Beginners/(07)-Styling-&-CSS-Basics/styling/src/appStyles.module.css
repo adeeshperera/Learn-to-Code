@@ -1,0 +1,4 @@
+/* CSS Modules - Locally scoped (Can't be used in the children components) */
+.success {
+	color: green;
+}
