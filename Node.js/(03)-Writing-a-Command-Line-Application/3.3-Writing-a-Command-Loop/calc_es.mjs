@@ -1,0 +1,28 @@
+// ReadLine Module (Line 2 -11)
+import * as readline from "readline";
+import { stdin as input, stdout as output } from "process";
+
+const rl = readline.createInterface({ input, output });
+
+function question(query) {
+	return new Promise((resolve) => {
+		rl.question(query, resolve);
+	});
+}
+// -- rl.mjs --
+
+// Logic
+let answer = await question("Enter your simple equation: ");
+
+while (answer != "quit") {
+	try {
+		const value = eval(answer);
+		console.log(`${value}`);
+	} catch (exception) {
+		console.log("I don't know how to do that.");
+	}
+
+	answer = await question("Enter your simple equation: ");
+}
+
+rl.close();
