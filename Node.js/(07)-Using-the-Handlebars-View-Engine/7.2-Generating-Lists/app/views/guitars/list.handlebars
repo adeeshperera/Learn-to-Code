@@ -1,0 +1,14 @@
+<h2>{{title}}</h2>
+<ul>
+	<!-- Iterate over each guitar in the collection -->
+	{{#each guitars}}
+		<li>
+			<!-- Link to the individual guitar page using the guitar's ID -->
+			<a href="/guitars/{{this.id}}">
+				<!-- Display the make and model of the guitar -->
+				{{this.make}}
+				{{this.model}}
+			</a>
+		</li>
+	{{/each}}
+</ul>
