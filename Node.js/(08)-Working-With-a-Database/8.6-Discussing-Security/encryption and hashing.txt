@@ -1,0 +1,16 @@
+Encryption:
+
+    Purpose: Converts data into a secret format to prevent unauthorized access. The original data can be retrieved using a specific key.
+    How It Works: Data is transformed using an algorithm and an encryption key. To access the original data, you need the corresponding decryption key.
+    Example: Encrypting a message so only someone with the right decryption key can read it. For instance, encrypting a file with a password so only someone who knows the password can decrypt and access the file.
+
+Hashing:
+
+    Purpose: Converts data into a fixed-size string of characters, which appears random. It’s a one-way process; you cannot easily reverse it to retrieve the original data.
+    How It Works: Data is processed through a hash function to produce a hash value (or hash code). The same input will always produce the same hash, but you can’t easily turn the hash back into the original data.
+    Example: Storing passwords securely. Instead of saving the actual password, you save its hash. When someone logs in, you hash the entered password and compare it to the stored hash.
+
+Summary:
+
+    Encryption: Reversible, meant for keeping data secret.
+    Hashing: Irreversible, meant for ensuring data integrity or securely storing sensitive information like passwords.
