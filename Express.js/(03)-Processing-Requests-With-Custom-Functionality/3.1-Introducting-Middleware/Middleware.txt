@@ -1,0 +1,15 @@
+Middleware is like a set of "checkpoints" or "stages" that incoming requests go through before reaching their final destination (like a route handler). Each piece of middleware can:
+
+    Inspect: Look at the request or response.
+    Modify: Change or add information to the request or response.
+    Perform Actions: Like logging, authentication, or handling errors.
+    Pass Control: Move the request to the next middleware or route handler with next().
+
+Here’s how it works:
+
+    Request Comes In: A user makes a request to your server.
+    Middleware Processes: Each piece of middleware runs in the order it’s set up. It can perform tasks like logging the request or checking if the user is authenticated.
+    Move On: Middleware uses next() to pass the request along to the next middleware or route handler.
+    Final Handling: Eventually, the request reaches its final destination, such as a route that sends a response back to the user.
+
+So, middleware helps you manage and process requests in a structured way before sending a response.
