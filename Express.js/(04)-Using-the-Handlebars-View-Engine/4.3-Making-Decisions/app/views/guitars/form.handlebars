@@ -1,0 +1,20 @@
+<!-- Check if the 'guitar' object exists -->
+{{#if guitar}}
+<!-- If 'guitar' exists, use the form action URL with the guitar's ID for editing -->
+<form method="post" action="/guitars/{{guitar.id}}">
+{{else}}
+<!-- If 'guitar' does not exist, use the form action URL for creating a new guitar (Don't have an ID) -->
+<form method="post" action="/guitars">
+{{/if}} <!-- End of the conditional block for form action URL -->
+
+    <!-- If we have a guitar, we want to output that information -->
+    <div>
+        Make: <input type="text" name="guitar_make" value="{{guitar.make}}" />
+    </div>
+    <div>
+        Model: <input type="text" name="guitar_model" value="{{guitar.model}}" />
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
