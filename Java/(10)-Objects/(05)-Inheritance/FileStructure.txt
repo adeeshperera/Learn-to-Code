@@ -1,0 +1,12 @@
+src/
+  animals/
+    Mammal.java         - package Animals;
+    Lion.java           - package Animals;
+  TestInheritance.java  - import Animals.Lion;
+
+If we use the following directory structure we can use package statements like this,
+src/
+  animals/
+    Mammal.java             - package Animals;
+    Lion.java               - package Animals;
+    TestInheritance.java    - package Animals;
