@@ -15,9 +15,13 @@ A beginner-friendly repository that teaches programming fundamentals through han
 ## 🚀 Core Concepts You'll Master
 
 **Foundation**: Variables, data types, input/output, comments
-**Control Flow**: If-else statements, loops, switch cases, break/continue  
+
+**Control Flow**: If-else statements, loops, switch cases, break/continue
+
 **Data Structures**: Arrays, lists, objects, functions, scope
+
 **Modern Practices**: Object-oriented programming, error handling, modules
+
 **Real Applications**: Web development, APIs, databases, user interfaces
 
 ## 🏁 Getting Started
