@@ -15,9 +15,13 @@ A beginner-friendly repository that teaches programming fundamentals through han
 ## 🚀 Core Concepts You'll Master
 
 **Foundation**: Variables, data types, input/output, comments
-**Control Flow**: If-else statements, loops, switch cases, break/continue  
+
+**Control Flow**: If-else statements, loops, switch cases, break/continue
+
 **Data Structures**: Arrays, lists, objects, functions, scope
+
 **Modern Practices**: Object-oriented programming, error handling, modules
+
 **Real Applications**: Web development, APIs, databases, user interfaces
 
 ## 🏁 Getting Started
@@ -41,12 +45,6 @@ Help make programming accessible to everyone! Contributions welcome from beginne
 **Learn**: [freeCodeCamp](https://freecodecamp.org) • [MDN Docs](https://developer.mozilla.org) • [CS50](https://cs50.harvard.edu)  
 **Practice**: [LeetCode](https://leetcode.com) • [Codepen](https://codepen.io) • [HackerRank](https://hackerrank.com)  
 **Tools**: [VS Code](https://code.visualstudio.com) • [Git](https://git-scm.com) • [Stack Overflow](https://stackoverflow.com)
-
-## 📄 License
-
-This project is licensed under the [Apache License 2.0](LICENSE).
-
-**Author**: [Adeesh Perera](https://github.com/adeeshperera)
 
 ---
 
