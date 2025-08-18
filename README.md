@@ -32,11 +32,11 @@ A beginner-friendly repository that teaches programming fundamentals through han
 
 Help make programming accessible to everyone! Contributions welcome from beginners and experts.
 
-**For Beginners**: Report confusing concepts, suggest helpful examples
+- **For Beginners**: Report confusing concepts, suggest helpful examples
 
-**For Developers**: Add languages, improve examples, create exercises
+- **For Developers**: Add languages, improve examples, create exercises
 
-**For Educators**: Enhance teaching approaches, add learning materials
+- **For Educators**: Enhance teaching approaches, add learning materials
 
 ## 📖 Helpful Resources
 
