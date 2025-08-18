@@ -32,21 +32,19 @@ A beginner-friendly repository that teaches programming fundamentals through han
 
 Help make programming accessible to everyone! Contributions welcome from beginners and experts.
 
-**For Beginners**: Report confusing concepts, suggest helpful examples
-**For Developers**: Add languages, improve examples, create exercises  
-**For Educators**: Enhance teaching approaches, add learning materials
+- **For Beginners**: Report confusing concepts, suggest helpful examples
+
+- **For Developers**: Add languages, improve examples, create exercises
+
+- **For Educators**: Enhance teaching approaches, add learning materials
 
 ## 📖 Helpful Resources
 
-**Learn**: [freeCodeCamp](https://freecodecamp.org) • [MDN Docs](https://developer.mozilla.org) • [CS50](https://cs50.harvard.edu)  
-**Practice**: [LeetCode](https://leetcode.com) • [Codepen](https://codepen.io) • [HackerRank](https://hackerrank.com)  
+**Learn**: [freeCodeCamp](https://freecodecamp.org) • [MDN Docs](https://developer.mozilla.org) • [CS50](https://cs50.harvard.edu)
+
+**Practice**: [LeetCode](https://leetcode.com) • [Codepen](https://codepen.io) • [HackerRank](https://hackerrank.com)
+
 **Tools**: [VS Code](https://code.visualstudio.com) • [Git](https://git-scm.com) • [Stack Overflow](https://stackoverflow.com)
-
-## 📄 License
-
-This project is licensed under the [Apache License 2.0](LICENSE).
-
-**Author**: [Adeesh Perera](https://github.com/adeeshperera)
 
 ---
 
