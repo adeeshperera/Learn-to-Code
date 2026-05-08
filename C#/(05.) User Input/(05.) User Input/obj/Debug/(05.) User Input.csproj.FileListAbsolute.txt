@@ -1,0 +1,8 @@
+E:\C#\(05.) User Input\(05.) User Input\bin\Debug\(05.) User Input.exe.config
+E:\C#\(05.) User Input\(05.) User Input\bin\Debug\(05.) User Input.exe
+E:\C#\(05.) User Input\(05.) User Input\bin\Debug\(05.) User Input.pdb
+E:\C#\(05.) User Input\(05.) User Input\obj\Debug\(05.) User Input.csproj.AssemblyReference.cache
+E:\C#\(05.) User Input\(05.) User Input\obj\Debug\(05.) User Input.csproj.SuggestedBindingRedirects.cache
+E:\C#\(05.) User Input\(05.) User Input\obj\Debug\(05.) User Input.csproj.CoreCompileInputs.cache
+E:\C#\(05.) User Input\(05.) User Input\obj\Debug\(05.) User Input.exe
+E:\C#\(05.) User Input\(05.) User Input\obj\Debug\(05.) User Input.pdb
