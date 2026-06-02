@@ -1,0 +1,8 @@
+E:\C#\(09.) While Loop\(09.) While Loop\bin\Debug\(09.) While Loop.exe.config
+E:\C#\(09.) While Loop\(09.) While Loop\bin\Debug\(09.) While Loop.exe
+E:\C#\(09.) While Loop\(09.) While Loop\bin\Debug\(09.) While Loop.pdb
+E:\C#\(09.) While Loop\(09.) While Loop\obj\Debug\(09.) While Loop.csproj.AssemblyReference.cache
+E:\C#\(09.) While Loop\(09.) While Loop\obj\Debug\(09.) While Loop.csproj.SuggestedBindingRedirects.cache
+E:\C#\(09.) While Loop\(09.) While Loop\obj\Debug\(09.) While Loop.csproj.CoreCompileInputs.cache
+E:\C#\(09.) While Loop\(09.) While Loop\obj\Debug\(09.) While Loop.exe
+E:\C#\(09.) While Loop\(09.) While Loop\obj\Debug\(09.) While Loop.pdb
